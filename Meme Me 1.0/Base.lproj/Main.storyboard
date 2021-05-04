@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CE3-1E-Dn3">
-                                <rect key="frame" x="58" y="261" width="298" height="256"/>
+                                <rect key="frame" x="37" y="249" width="341" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="YBR-Nk-SX5"/>
                                 </constraints>
@@ -53,12 +53,18 @@
                                                 <state key="normal" title="Cancel">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="cancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zta-NI-cJs"/>
+                                                </connections>
                                             </button>
+                                            <connections>
+                                                <action selector="cancelButton:" destination="BYZ-38-t0r" id="yzT-xu-lGw"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEh-e1-qs6">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEh-e1-qs6" userLabel="BottomToolbar">
                                 <rect key="frame" x="0.0" y="769" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="S2v-vZ-iSX"/>
@@ -74,35 +80,36 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6aY-dK-udQ" userLabel="BottomViewTextField">
-                                <rect key="frame" x="58" y="640" width="287" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="56Y-w5-cD9" userLabel="TopViewTextField">
-                                <rect key="frame" x="58" y="156" width="298" height="34"/>
+                                <rect key="frame" x="58" y="121" width="298" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6aY-dK-udQ" userLabel="BottomViewTextField">
+                                <rect key="frame" x="64" y="679" width="287" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6aY-dK-udQ" firstAttribute="top" secondItem="CE3-1E-Dn3" secondAttribute="bottom" constant="123" id="0Mf-tY-SlZ"/>
-                            <constraint firstItem="XEh-e1-qs6" firstAttribute="leading" secondItem="z48-BM-ShE" secondAttribute="leading" id="56D-C8-yYz"/>
-                            <constraint firstItem="XEh-e1-qs6" firstAttribute="top" secondItem="6aY-dK-udQ" secondAttribute="bottom" constant="95" id="6VC-Qo-5qX"/>
-                            <constraint firstItem="CE3-1E-Dn3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="860-HJ-e6w"/>
-                            <constraint firstItem="XEh-e1-qs6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9SZ-9X-Cpx"/>
-                            <constraint firstItem="6aY-dK-udQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="CRj-1r-KMb"/>
-                            <constraint firstItem="56Y-w5-cD9" firstAttribute="top" secondItem="z48-BM-ShE" secondAttribute="bottom" constant="58" id="DTP-pm-C85"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56Y-w5-cD9" secondAttribute="trailing" constant="58" id="Jya-JU-Px8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CE3-1E-Dn3" secondAttribute="trailing" constant="58" id="TKh-TP-Vi9"/>
-                            <constraint firstItem="56Y-w5-cD9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="Ucl-ny-MPa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6aY-dK-udQ" secondAttribute="trailing" constant="69" id="hmL-5Z-aQb"/>
-                            <constraint firstItem="XEh-e1-qs6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="m82-AI-kAQ"/>
-                            <constraint firstItem="XEh-e1-qs6" firstAttribute="centerX" secondItem="CE3-1E-Dn3" secondAttribute="centerX" id="nuC-QG-i7u"/>
-                            <constraint firstItem="CE3-1E-Dn3" firstAttribute="top" secondItem="56Y-w5-cD9" secondAttribute="bottom" constant="71" id="pZU-rl-sZm"/>
-                            <constraint firstItem="XEh-e1-qs6" firstAttribute="trailing" secondItem="z48-BM-ShE" secondAttribute="trailing" id="yUY-sd-j6A"/>
+                            <constraint firstItem="6aY-dK-udQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="6kf-Oc-1t7"/>
+                            <constraint firstItem="CE3-1E-Dn3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="8dN-Uz-2rN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CE3-1E-Dn3" secondAttribute="trailing" constant="36" id="9uy-8o-k0y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6aY-dK-udQ" secondAttribute="trailing" constant="63" id="ALw-U8-fcW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XEh-e1-qs6" secondAttribute="bottom" id="DaP-eR-3Iy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56Y-w5-cD9" secondAttribute="trailing" constant="58" id="DqZ-Ju-KOl"/>
+                            <constraint firstItem="XEh-e1-qs6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eem-bh-5tI"/>
+                            <constraint firstItem="z48-BM-ShE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="En0-Gt-Zk9"/>
+                            <constraint firstItem="56Y-w5-cD9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="GNP-8C-wHG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6aY-dK-udQ" secondAttribute="bottom" constant="100" id="Hog-fK-7EI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XEh-e1-qs6" secondAttribute="trailing" id="J6x-2p-gvJ"/>
+                            <constraint firstItem="CE3-1E-Dn3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="205" id="JCP-Nc-gxV"/>
+                            <constraint firstItem="z48-BM-ShE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PkF-7I-yYU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CE3-1E-Dn3" secondAttribute="bottom" constant="308" id="RN1-mT-tTg"/>
+                            <constraint firstItem="56Y-w5-cD9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="bpl-rs-QvM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z48-BM-ShE" secondAttribute="trailing" id="x36-ug-HA2"/>
                         </constraints>
                     </view>
                     <toolbarItems>

@@ -15,6 +15,7 @@
 		4B48A020263F4623008D4247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B48A01E263F4623008D4247 /* LaunchScreen.storyboard */; };
 		4B48A02D26406BA7008D4247 /* TopViewTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48A02C26406BA7008D4247 /* TopViewTextFieldDelegate.swift */; };
 		4B48A02F26406C4E008D4247 /* BottomViewTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48A02E26406C4E008D4247 /* BottomViewTextFieldDelegate.swift */; };
+		4B48A0312641B2FA008D4247 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48A0302641B2FA008D4247 /* Meme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4B48A021263F4623008D4247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B48A02C26406BA7008D4247 /* TopViewTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewTextFieldDelegate.swift; sourceTree = "<group>"; };
 		4B48A02E26406C4E008D4247 /* BottomViewTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewTextFieldDelegate.swift; sourceTree = "<group>"; };
+		4B48A0302641B2FA008D4247 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				4B48A013263F4622008D4247 /* AppDelegate.swift */,
 				4B48A015263F4622008D4247 /* SceneDelegate.swift */,
 				4B48A017263F4622008D4247 /* ViewController.swift */,
+				4B48A0302641B2FA008D4247 /* Meme.swift */,
 				4B48A02726403E54008D4247 /* Text Field */,
 				4B48A019263F4622008D4247 /* Main.storyboard */,
 				4B48A01C263F4623008D4247 /* Assets.xcassets */,
@@ -155,6 +158,7 @@
 				4B48A02F26406C4E008D4247 /* BottomViewTextFieldDelegate.swift in Sources */,
 				4B48A014263F4622008D4247 /* AppDelegate.swift in Sources */,
 				4B48A016263F4622008D4247 /* SceneDelegate.swift in Sources */,
+				4B48A0312641B2FA008D4247 /* Meme.swift in Sources */,
 				4B48A02D26406BA7008D4247 /* TopViewTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
